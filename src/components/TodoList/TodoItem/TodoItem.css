@@ -1,0 +1,86 @@
+.form-control {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1.5px solid #e0e4ea;
+  box-shadow: 0 2px 8px rgba(80, 90, 180, 0.07);
+  border-radius: 12px;
+  margin: 14px 0;
+  padding: 18px 24px;
+  transition: box-shadow 0.2s;
+}
+
+.form-control:hover {
+  box-shadow: 0 4px 16px rgba(80, 90, 180, 0.13);
+  border-color: #b3b8e0;
+}
+
+.cb-container {
+  min-width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.th-container {
+  flex: 1;
+  margin: 0 18px;
+  color: #2d2d2d;
+  font-size: 1.18rem;
+  word-break: break-word;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.th-container.finished {
+  color: #b0b0b0;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.dd-container {
+  min-width: 110px;
+  text-align: right;
+  color: #6c7a89;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+
+input[type="checkbox"] {
+  accent-color: #6c63ff;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1.5px solid #b3b8e0;
+  background: #f5f6fa;
+  margin: 0;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px #e0e4fa;
+}
+
+input[type="checkbox"]:checked {
+  border-color: #6c63ff;
+  background: #e0e4fa;
+}
+
+
+input[type="checkbox"]:focus {
+  outline: 2px solid #6c63ff;
+  outline-offset: 2px;
+}
+
+input[type="checkbox"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
